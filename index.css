@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height:auto;
+    width: auto;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./cody-scott-milewski-aCnkRlBD0i4-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    font-size: 75px;
+    color:white;
+    text-align:  center; 
+     
+}
+#parent-div{
+    width: 700px;
+    height: 200px;
+    border: 1px solid black;
+    margin-left: 350px;
+    margin-top: 100px;
+    backdrop-filter: blur(10px);
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 2px 2px 40px 2px yellow;
+}
+#parent-div>h1:nth-child(1)::after{
+    content:"  :";
+}
+
+#parent-div>h1:nth-child(2)::after{
+    content:"  :";
+}
+#parent-div>h1:nth-child(3){
+    color: red;
+}
+#Month{
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 20px;
+}
+#Month::before{
+    content: "Month:  ";
+}
+#year{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 20px;
+    }
+    #year::before{
+        content: "Year:  ";
+    }
